@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  background: #2980b9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffffff,
+    #6dd5fa,
+    #2980b9
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #6dd5fa,
+    #2980b9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#title {
+  font-family: "Lobster", cursive;
+  margin-bottom: 5px;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+label {
+  display: block;
+}
+#description {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#media {
+  display: inline-block;
+}
+.suvform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.sub {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+select {
+  width: 110%;
+  padding: 20px;
+  font-size: 1rem;
+}
+input {
+  width: 100%;
+  padding: 20px;
+  font-size: 1rem;
+}
+textarea {
+  width: 100%;
+  padding: 40px;
+  font-size: 2rem;
+}
+input[type="radio"] {
+  width: fit-content;
+  display: inline-block;
+}
+input[type="checkbox"] {
+  width: fit-content;
+  display: inline-block;
+}
+.submit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#submit {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 0px solid #e74c3c;
+  border-radius: 0.6em;
+  color: #e74c3c;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 2rem;
+  font-weight: 10;
+  line-height: 0.4;
+  margin: 50px;
+  padding: 0.8em 0.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+#submit:hover,
+#submit:focus {
+  color: black;
+  outline: 0;
+}
+#submit {
+  border-color: #3498db;
+  color: black;
+  box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+  transition: all 150ms ease-in-out;
+}
+#submit:hover {
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Page Santorini.com</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <h1 id="title">Santorini.com</h1>
+      <p id="description">Tourist Form</p>
+    </div>
+    <div class="suvform">
+      <form action="" id="survey-form">
+        <div class="input-form">
+          <label class="sub" id="name-label">Name</label>
+          <input id="name" type="Name" placeholder="Name" required />
+          <label class="sub" id="email-label">Email</label>
+          <input
+            id="email"
+            type="email"
+            pattern="[^ @]*@[^ @]*"
+            placeholder="Email"
+            required
+          />
+          <label class="sub" id="number-label">Age</label>
+          <input
+            id="number"
+            type="number"
+            placeholder="Age"
+            min="10"
+            max="65"
+            required
+          />
+        </div>
+        <div class="input-form">
+          <label class="sub" id="dropdown">Gender</label>
+          <select name="role" id="dropdown" required>
+            <option selected disabled>Select your gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+        </div>
+        <div class="input-form">
+          <label class="sub">Job</label>
+          <label for="">
+            <input name="Job" type="radio" value="Full-time" checked />Full-time</label>
+          <label for="">
+            <input name="Job" type="radio" value="Part-time" />Part-time</label>
+          <label for="">  
+            <input name="Job" type="radio" value="Student" />Student</label>
+          
+        </div>
+        <div id="Media" class="input-form">
+          <label class="sub">How did you find out about <i>Santorini.com</i>?</label>
+            <label for=""><input name="media" type="checkbox" value="Official-Facebook" />
+            Official Facebook</label>
+            <label for=""><input name="media" type="checkbox" value="Official-Twitter" />
+            Official Twitter</label>
+            <label for=""><input name="media" type="checkbox" value="Official-Instagram" />
+            Official Instagram</label>
+            <label for=""><input name="media" type="checkbox" value="Ads" />
+            TV Ads / Youtube Ads</label>
+            <label for=""><input name="media" type="checkbox" value="Ads" />
+            Brochure / Friend's Recommendation</label>
+        </div>
+        <div class="input-form">
+          <label class="sub" for="suggestions">Any sugesstions for the website?</label>
+          <textarea  id="sugesstions" name="sugesstions" placeholder="Enter your sugesstions here..."></textarea>
+          </div>
+        <div class="submit-btn">
+          <button type="submit" id="submit">
+            Submit
+          </button>
+      </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
