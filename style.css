@@ -57,7 +57,7 @@ input {
   font-size: 1rem;
 }
 textarea {
-  width: 100%;
+  width: 90%;
   padding: 40px;
   font-size: 2rem;
 }
@@ -110,4 +110,15 @@ input[type="checkbox"] {
 }
 #submit:hover {
   box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+}
+@media screen and (max-width: 767px) {
+  input {
+    width: 80%;
+  }
+  select {
+    width: 90%;
+  }
+  textarea {
+    width: 70%;
+  }
 }
